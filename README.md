@@ -6,7 +6,11 @@ In the customer mode, the app displays the current inventory and the purchase of
 
 ![Alt text](screenshots/1.PNG)
 
+Purchasing bananas(item_id 5) and a quantity of 5
+
 ![Alt text](screenshots/2.PNG)
+
+Not enough stock
 
 ![Alt text](screenshots/3.PNG)
 
