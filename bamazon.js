@@ -136,8 +136,8 @@ function promptPurchase(){
                             })
 					})
 				} else {
-					console.log('Sorry, there is not enough product in stock, your order can not be placed as is.');
-					console.log('Please modify your order.');
+					console.log('Sorry, not enough in stock.');
+					console.log('Please try again.');
 					console.log("\n---------------------------------------------------------------------\n");
 
 					displayInv();

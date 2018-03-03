@@ -32,7 +32,7 @@
             }  
         ]).then(function(choice){
 
-            console.log(choice);
+            // console.log(choice);
 
             switch(choice.managerOption){
                 
@@ -84,7 +84,7 @@
         var tableArr = [];
         var innerDataArr = [];
 
-        connection.query( "SELECT * FROM products WHERE stock_quantity < " , function(err,data){
+        connection.query( "SELECT * FROM products WHERE stock_quantity < 30" , function(err,data){
             if(err) throw err;
             innerDataArr = [];
     
