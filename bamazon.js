@@ -28,24 +28,22 @@ var connection = mysql.createConnection({
 
     var sqlStr = 'SELECT * FROM products';
     
+    var tableArr = [];
+    var innerDataArr = [];
 
     connection.query(sqlStr , function(err,data){
         if(err) throw err;
+        innerDataArr = [];
 
         console.log("This is the current inventory.");
         console.log("--------------------------\n");
-        for( var i = 0 ; i<data.length ; i++){
-        var invTable = cTable.getTable([
-            {
-                id : JSON.stringify(data[i].item_id),
-                name : JSON.stringify(data[i].product_name),
-                department : JSON.stringify(data[i].department_name),
-                price : JSON.stringify(data[i].price),
-                stock : JSON.stringify(data[i].stock_quantity)
-            }
-        ])
-        console.log(invTable); 
+        for (var i = 0; i < data.length; i++) {
+            innerDataArr = [];
+            innerDataArr = [[data[i].item_id],[data[i].product_name],[data[i].department_name],[data[i].price],[data[i].stock_quantity]];
+
+            tableArr.push(innerDataArr);
         }
+        console.table(['Item ID', 'Name', 'Department', 'Price', 'Quantity'], tableArr);
         console.log("-------------------\n");
 
         promptPurchase();
