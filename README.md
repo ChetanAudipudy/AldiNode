@@ -8,7 +8,7 @@ In the customer mode, the app displays the current inventory and the purchase of
 
 ![Alt text](screenshots/2.PNG)
 
-![Alt text](screenshots/3.PNG)
+![Alt text](screenshots/3(no stock).PNG)
 
 There is an added functionality of user input validation. For example, a customer cannot input letters when the application is asking for the item id which is a number.
 
