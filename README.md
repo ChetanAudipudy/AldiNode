@@ -1,5 +1,5 @@
-# Bamazon
-Bamazon is a CLI store-front app that depicts the process of shopping from a store. It runs on node.js and MYSQL database. There are two main modes in this app - Customer and Manager.
+# AldiNode
+AldiNode is a CLI store-front app that depicts the process of shopping from a store. It runs on node.js and MYSQL database. There are two main modes in this app - Customer and Manager.
 
 ## Customer
 In the customer mode, the app displays the current inventory and the purchase of an item can be made by the customer. It asks for the item id and the quantity. It takes in the user input of quantity and checks against the available stock in the database. It proceeds with the purchase if the item is in stock or it shows a "not enough stock" message if the item is not in stock.
